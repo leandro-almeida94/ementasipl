@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.ei2015.ementasipleiria.NavigationDrawerFragment"
+    android:background="#eee"
+    android:orientation="vertical">
+
+<ImageView
+    android:paddingTop="@dimen/toolbar_padding"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:background="@android:color/white"
+    android:scaleType="fitEnd"
+    android:src="@drawable/ipl"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

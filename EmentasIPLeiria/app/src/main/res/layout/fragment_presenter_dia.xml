@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="pt.ei2015.ementasipleiria.PresenterDia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="8dp"
+                android:id="@+id/labelAlmoco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Almoço"
+                android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/labelAlmocoPratoCarne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prato de carne" />
+
+                <TextView
+                    android:paddingLeft="100dp"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"
+                    android:id="@+id/txtAlmocoPratoCarne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelAlmocoPratoPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prato de Peixe" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtAlmocoPratoPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelAlmocoPratoVegetariano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prato Vegetariano" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtAlmocoPratoVegetariano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelAlmocoSopa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sopa" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtAlmocoSopa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelAlmocoSobremesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sobremesa" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtAlmocoSobremesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/labelJantar"
+                android:paddingTop="10dp"
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Jantar"
+                android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/labelJantarPratoCarne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prato de carne" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtJantarPratoCarne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelJantarPratoPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prato de Peixe" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtJantarPratoPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelJantarSopa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sopa" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtJantarSopa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelJantarSobremesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sobremesa" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/txtJantarSobremesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="false"/>
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

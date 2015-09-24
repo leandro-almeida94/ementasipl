@@ -1,54 +1,79 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package pt.ei2015.ementasipleiria;
 
 /**
- * Created by alves on 22/07/2015.
+ *
+ * @author alves
  */
 public class Refeicao {
-    String sopa;
-    String carne;
-    String peixe;
-    String sobremesa;
+    String sopa=null;
+    String carne=null;
+    String peixe=null;
+    String sobremesa=null;
+    String vegetariano=null;
+
+    public Refeicao(String sopa, String carne, String peixe, String sobremesa, String vegetariano) {
+        this.sopa = sopa;
+        this.carne = carne;
+        this.peixe = peixe;
+        this.sobremesa = sobremesa;
+        this.vegetariano=vegetariano;
+    }
 
     public Refeicao() {
     }
 
-    public Refeicao(String sopa, String carne, String peixe, String sobremesa) {
-        this.sopa = sopa;
-        this.carne = carne;
-        this.peixe = peixe;
-        this.sobremesa = sobremesa;
-    }
-
     public String getSopa() {
-
-        return sopa;
+        if(sopa !=null)
+            return sopa.trim();
+        return "Não Definido";
     }
 
     public void setSopa(String sopa) {
-        this.sopa = sopa;
+        this.sopa = sopa.replace("Sopa:", "").replace("Sopa :", "");
     }
 
     public String getCarne() {
-        return carne;
+        if(carne!=null)
+            return carne.trim();
+        return "Não Definido";
     }
 
     public void setCarne(String carne) {
-        this.carne = carne;
+        this.carne = carne.replace("Carne:", "").replace("Carne :", "");
     }
 
     public String getPeixe() {
-        return peixe;
+        if(peixe!=null)
+            return peixe.trim();
+        return "Não Definido";
     }
 
     public void setPeixe(String peixe) {
-        this.peixe = peixe;
+        this.peixe = peixe.replace("Peixe:", "").replace("Peixe :", "");
     }
 
     public String getSobremesa() {
-        return sobremesa;
+        if(sobremesa != null)
+            return sobremesa.trim();
+        return "Não Definido";
     }
 
     public void setSobremesa(String sobremesa) {
-        this.sobremesa = sobremesa;
+        this.sobremesa = sobremesa.replace("Sobremesa:", "").replace("Sobremesa :", "");
     }
+    
+        public String getVegetariano() {
+            if(vegetariano != null)
+            return vegetariano.trim();
+        return "Não Definido";
+    }
+
+    public void setVegetariano(String vegetariano) {
+        this.vegetariano = vegetariano.replace("Vegetariano:", "").replace("Vegetariano :", "");
+    }   
 }

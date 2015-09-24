@@ -1,22 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package pt.ei2015.ementasipleiria;
 
 import java.util.Date;
 
 /**
- * Created by alves on 22/07/2015.
+ *
+ * @author alves
  */
 public class Dia {
     Date dia;
     Refeicao almoco;
     Refeicao jantar;
+    
+    String prato;
 
-    public Dia() {
+    public String getPrato() {
+        return prato.trim();
+    }
+
+    public void setPrato(String prato) {
+        this.prato = prato.replace("Sopa:", "").replace("Sopa :", "");
     }
 
     public Dia(Date dia, Refeicao almoco, Refeicao jantar) {
         this.dia = dia;
         this.almoco = almoco;
         this.jantar = jantar;
+    }
+
+    public Dia() {
     }
 
     public Date getDia() {
@@ -42,4 +58,6 @@ public class Dia {
     public void setJantar(Refeicao jantar) {
         this.jantar = jantar;
     }
+
+    
 }
